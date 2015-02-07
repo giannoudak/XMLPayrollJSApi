@@ -16,7 +16,7 @@ namespace XMLPayrollJSApi.Models
         //[Range(1,12)]
         public short Month { get; set; }
        // [MaxLength(4),MinLength(4)]
-        public int year { get; set; }
+        public int Year { get; set; }
     }
 
 
