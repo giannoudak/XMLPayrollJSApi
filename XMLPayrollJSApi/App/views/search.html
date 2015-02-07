@@ -1,0 +1,98 @@
+﻿
+<div class="container" >
+
+    <header class="row row-centered">
+        <h5>{{title}}</h5>
+    </header>
+    
+
+    <div class="row col-lg-12">
+
+        <form name="payrollform" ng-submit="submitForm()" novalidate>
+
+            <div class="row">
+
+                <div class="col-lg-4">
+                    <h4>ΑΦΜ</h4>
+
+                    <div class="form-group " ng-class="{ 'has-error' : payrollform.afm.$invalid && (payrollform.afm.$dirty || submitted)}">
+                        <input type="text" name="afm" class="form-control input-sm" ng-model="SalaryDemandViewModel.afm" placeholder="το ΑΦΜ σας..." ng-minlength="9" ng-maxlength="9" required numbers-only>
+                        <p ng-show="payrollform.afm.$error.required && (payrollform.afm.$dirty || submitted)" class="help-block">Το ΑΦΜ σας είναι υποχρεωτικό.</p>
+                        <p ng-show="payrollform.afm.$error.minlength && (payrollform.afm.$dirty || submitted)" class="help-block">Το ΑΦΜ σας είναι μικρότερο από 9 χαρακτήρες.</p>
+                        <p ng-show="payrollform.afm.$error.maxlength && (payrollform.afm.$dirty || submitted)" class="help-block">Το ΑΦΜ σας είναι μεγαλύτερο από 9 χαρακτήρες.</p>
+                        <p ng-show="payrollform.afm.$error.numbersOnly && (payrollform.afm.$dirty || submitted)" class="help-block">Το ΑΦΜ σας πρέπει να έχει μόνο αριθμούς.</p>
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="col-lg-4">
+                    <h4>Μήνας</h4>
+                    <div class="form-group " ng-class="{ 'has-error' : payrollform.month.$invalid  && (payrollform.month.$dirty || submitted)}">
+
+
+
+                        <select name="month" class="form-control input-sm "
+                                ng-model="SalaryDemandViewModel.month"
+                                ng-required="true">
+                            <option value=''>μήνας...</option>
+                            <option value=1>Ιανουάριος</option>
+                            <option value=2>Φεβρουάριος</option>
+                            <option value=3>Μάρτιος</option>
+                        </select>
+                        <p ng-show="payrollform.month.$error.required  && (payrollform.month.$dirty || submitted)" class="help-block">Επιλέξτε Μήνα.</p>
+                    </div>
+
+
+                </div>
+
+                <div class="col-lg-4">
+                    <h4>Έτος</h4>
+                    <div class="form-group" ng-class="{ 'has-error' : payrollform.year.$invalid  && (payrollform.year.$dirty || submitted)}">
+
+                        <select name="year" class="form-control input-sm"
+                                ng-model="SalaryDemandViewModel.year"
+                                ng-required="true">
+                            <option value=''>έτος...</option>
+                            <option value=2014>2014</option>
+                            <option value=2015>2015</option>
+                        </select>
+                        <p ng-show="payrollform.year.$error.required  && (payrollform.year.$dirty || submitted)" class="help-block">Επιλέξτε Έτος.</p>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="form-group col-lg-1 ">
+                    <button type="submit" class="btn btn-primary" data-ng-disabled="progress.active()">Αναζήτηση</button>
+
+                </div>
+                <div class="col-md-offset-2" data-ng-show="progress.active()">
+                    
+                    <div class="spinner pull-left">
+                        <div class="rect1"></div>
+                        <div class="rect2"></div>
+                        <div class="rect3"></div>
+                        <div class="rect4"></div>
+                        <div class="rect5"></div>
+
+                    </div>
+                    <div class="spinner-text">γίνεται αναζήτηση</div>
+
+                </div>
+
+            </div>
+        </form>
+
+        <div id="errors" ng-show="error" ng-class="{'alert alert-danger' : error}">
+            {{errorMessage}}
+        </div>
+
+    </div>
+
+</div>

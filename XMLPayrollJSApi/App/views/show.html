@@ -1,0 +1,179 @@
+﻿
+
+<div class="row row-centered bs-example-bg-classes" ng-show="item | isEmptyObject">
+    <p class="bg-danger"><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span> {{emptyItemMessage}}</p>
+</div>
+
+<div class="container" ng-hide="item | isEmptyObject">
+
+    <header class="row row-centered hidden-print">
+        <h5 class="subtitle">
+            {{title}}: ΑΦΜ:{{afm}} - {{month}}/{{year}}
+            <button class="btn btn-info btn-xs" type="button" disabled ng-disabled="true" onclick="PrintContent('apodoxes_result')"><span aria-hidden="true" class="glyphicon glyphicon-print"></span> Εκτύπωση</button>
+        </h5>
+    </header>
+
+    <div class="row row-centered" id="apodoxes_result">
+        <p><strong>ΒΕΒΑΙΩΣΗ ΑΠΟΔΟΧΩΝ</strong></p>
+        <p>
+            ΑΦΜ:{{afm}} Περίοδος Μισθοδοσίας: {{month}}/{{year}}
+
+        </p>
+
+        <table id="proswpika" class="table table-condensed table-bordered table-striped table-hover table-responsive">
+            <tr>
+                <td class="field-label">ΑΡ.ΜΗΤΡΩΟΥ</td>
+                <td class="field-value">{{item.salaryEmployee.am}}</td>
+                <td class="field-label">ΑΜΚΑ</td>
+                <td class="field-value">{{item.salaryEmployee.amka}}</td>
+            </tr>
+
+            <tr>
+                <td class="field-label">ΕΠΩΝΥΜΟ</td>
+                <td class="field-value">{{item.salaryEmployee.lastName}}</td>
+                <td class="field-label">ΑΦΜ</td>
+                <td class="field-value">{{item.salaryEmployee.afm}}</td>
+            </tr>
+
+            <tr>
+                <td class="field-label">ΟΝΟΜΑ</td>
+                <td class="field-value">{{item.salaryEmployee.firstName}}</td>
+                <td class="field-label">ΑΡ.ΤΑΥΤ</td>
+                <td class="field-value">{{item.salaryEmployee.arTaut}}</td>
+            </tr>
+
+            <tr>
+                <td class="field-label">ΑΣΦΑΛΙΣΤΙΚΟ</td>
+                <td class="field-value">{{item.salaryEmployee.isNewInsured ? 'ΝΕΟΣ' : 'ΠΑΛΙΟΣ'}} ΑΣΦΑΛΙΣΜΕΝΟΣ</td>
+                <td class="field-label" colspan="2"></td>
+
+            </tr>
+
+        </table>
+
+
+        <div ng-repeat="salaryItem in item.salaryDetalis">
+
+
+            <div id=" {{salaryItem.typeDescriptionText}}" class="row ">
+                <p class="row row-centered text-uppercase">
+                    <strong>Ποσα {{salaryItem.typeDisplayText}}  <span ng-show="salaryItem.type==1">ΑΠΟ: {{ salaryItem.startDate }} - ΜΕΧΡΙ: {{ salaryItem.endDate }}</span> </strong>
+                </p>
+
+                <div class="row">
+                    <div class="col-lg-6 col-xs-6" id="takt_apodoxes_erg_eisf">
+                        <table class="table table-condensed table-bordered table-striped table-hover table-responsive">
+                            <caption>ΑΠΟΔΟΧΕΣ</caption>
+                            <thead>
+                                <tr>
+                                    <th class="field-value">Κωδικός</th>
+                                    <th class="field-value">Περιγραφή</th>
+                                    <th class="field-value">Ποσό</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="amoibh in salaryItem.amoibes | orderBy:'$index':true">
+                                    <td class="field-value">{{amoibh.kae}}</td>
+                                    <td class="field-value">{{amoibh.kaeDesc}}</td>
+                                    <td class="field-value">{{amoibh.amount | number:2}}</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><strong>ΣΥΝΟΛΟ ΑΠΟΔΟΧΩΝ</strong></td>
+                                    <td class="field-value">{{salaryItem.totalSynakap | number:2}}</td>
+                                </tr>
+                                <tr ng-repeat="ergEisf in salaryItem.ergEisfores">
+                                    <td class="field-value">{{ergEisf.kae}}</td>
+                                    <td class="field-value">{{ergEisf.kaeDesc}}</td>
+                                    <td class="field-value">{{ergEisf.amount | number:2}}</td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+
+                    <div class="col-lg-6 col-xs-6" id="takt_krathseis">
+                        <table class="table table-condensed table-bordered table-striped table-hover table-responsive">
+                            <caption>ΚΡΑΤΗΣΕΙΣ</caption>
+                            <thead>
+                                <tr>
+                                    <th class="field-value">Κωδικός</th>
+                                    <th class="field-value">Περιγραφή</th>
+                                    <th class="field-value">Ποσό</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="krathsh in salaryItem.krathseis | orderBy:'kae':false ">
+                                    <td class="field-value">{{krathsh.kae}}</td>
+                                    <td class="field-value">{{krathsh.kaeDesc}}</td>
+                                    <td class="field-value">{{krathsh.amount | number:2}}</td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-xs-6">
+                        <table class="table table-condensed table-responsive">
+                            <tr>
+
+                                <td colspan="2" class="field-label-sum">
+                                    ΣΥΝΟΛΟ ΑΠΟΔΟΧΩΝ &amp; ΕΡΓΟΔ
+                                </td>
+                                <td>
+                                    {{(salaryItem.totalSynakap + salaryItem.totalErgodotikes ) | number:2}}
+                                </td>
+                            </tr>
+
+                            <tr>
+
+                                <td colspan="2" class="field-label-sum">
+                                    ΠΛΗΡΩΤΕΟ ΜΗΝΑ
+                                </td>
+                                <td>
+                                    {{salaryItem.totalPlhroteo  | number:2}}
+                                </td>
+                            </tr>
+                        </table>
+
+                    </div>
+                    <div class="col-lg-6 col-xs-6">
+                        <table class="table table-condensed table-responsive">
+                            <tr>
+
+                                <td colspan="2" class="field-label-sum">
+                                    ΣΥΝΟΛΟ ΚΡΑΤΗΣΕΩΝ
+                                </td>
+                                <td style="text-align:right">
+                                    {{salaryItem.totalSynoloKrathsewn | number:2}}
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+</div>
+
+

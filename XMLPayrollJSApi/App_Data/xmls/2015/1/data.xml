@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?><psp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gsis.gr/psp psp-2.3.xsd" xmlns="http://www.gsis.gr/psp/2.3">
+  <header>
+    <schemaVersion value="2.3" />
+    <transaction>
+      <period month="1" year="2015" />
+      <periodType value="1" />
+      <appType>initial</appType>
+      <category><![CDATA[]]></category>
+    </transaction>
+  </header>
+  <body>
+    <organizations>
+	  <organization id="191170">
+		<employees>
+			<employee>
+				<identification>
+              <firstName>ΙΩΑΝΝΗΣ</firstName>
+              <lastName>ΙΩΑΝΝΟΥ</lastName>
+              <tel>2821012663</tel>
+              <tin>140938500</tin>
+              <policeId>ΑΗ703902</policeId>
+              <bankAccount iban="" />
+              <amka>23026700100</amka>
+              <amm>208059</amm>
+              <scale>
+                <rank>560</rank>
+              </scale>
+              <category value="ΠΕ" />
+            </identification>
+				<payment contractType="1">
+              <income type="0">
+                <gr code="1" kae="0211" amount="1437.00" />
+                <gr code="4" kae="0213" amount="70.00" />
+                <et code="4052000" kae="0293" amount="76.86" />
+                <et code="4012504" kae="0292" amount="9.66" />
+                <et code="4012501" kae="0292" amount="35.55" />
+                <de code="4052000" amount="38.43" />
+                <de code="4012504" amount="9.66" />
+                <de code="4012501" amount="35.55" />
+                <de code="4013601" amount="47.40" />
+                <de code="4003101" amount="63.81" />
+                <de code="3082400" amount="88.43" />
+                <de code="3082800" amount="30.14" />
+                <de code="4013605" amount="15.07" />
+                <de code="3011300" amount="83.01" />
+                <de code="3089100" amount="8.25" />
+                <de code="4999901" amount="3.00" />
+              </income>
+              <netAmount1 value="542.13" />
+              <netAmount2 value="542.12" />
+            </payment>
+			</employee>
+      <employee>
+        <identification>
+          <firstName>GOYNA</firstName>
+          <lastName>IVANNA-POLAK</lastName>
+          <tel></tel>
+          <email>mail@dipe.chan.sch.gr</email>
+          <tin>261042101</tin>
+          <policeId>Κ960401</policeId>
+          <bankAccount iban="" />
+          <amka>27125202922</amka>
+          <amm>305651</amm>
+          <scale>
+            <rank>576</rank>
+          </scale>
+          <category value="ΔΕ" />
+        </identification>
+        <payment contractType="1">
+          <income type="0">
+            <gr code="1" kae="0211" amount="1379.00" />
+            <gr code="6" kae="0215" amount="250.00" />
+            <et code="4052000" kae="0293" amount="83.08" />
+            <et code="4012504" kae="0292" amount="10.62" />
+            <et code="4012501" kae="0292" amount="38.25" />
+            <de code="4052000" amount="41.54" />
+            <de code="4012504" amount="10.62" />
+            <de code="4012501" amount="38.25" />
+            <de code="4013601" amount="51.00" />
+            <de code="4003101" amount="70.79" />
+            <de code="3082400" amount="97.94" />
+            <de code="3082800" amount="32.58" />
+            <de code="4013605" amount="16.29" />
+            <de code="3011300" amount="102.83" />
+            <de code="3089100" amount="8.89" />
+          </income>
+          <netAmount1 value="579.14" />
+          <netAmount2 value="579.13" />
+        </payment>
+      </employee>
+      <employee>
+        <identification>
+          <firstName>ΘΩΜΗΣ</firstName>
+          <lastName>ΓΑΛΛΙΑΣ</lastName>
+          <tel>2102531958</tel>
+          <tin>2641042100</tin>
+          <policeId>Χ068326</policeId>
+          <bankAccount iban="" />
+          <amka>06118602124</amka>
+          <amm>701453</amm>
+          <newInsured></newInsured>
+          <scale>
+            <rank>548</rank>
+          </scale>
+          <category value="ΠΕ" />
+        </identification>
+        <payment contractType="1">
+          <income type="0">
+            <gr code="1" kae="0211" amount="1092.00" />
+            <gr code="7" kae="0221" amount="18.40" />
+            <et code="4052000" kae="0293" amount="56.63" />
+            <et code="4012501" kae="0292" amount="42.92" />
+            <de code="4052000" amount="28.32" />
+            <de code="4012501" amount="42.92" />
+            <de code="4013601" amount="57.22" />
+            <de code="4003101" amount="49.68" />
+            <de code="3082400" amount="104.81" />
+            <de code="3082800" amount="22.21" />
+            <de code="4013605" amount="11.10" />
+            <de code="4999901" amount="3.00" />
+          </income>
+          <netAmount1 value="395.57" />
+          <netAmount2 value="395.57" />
+        </payment>
+      </employee>
+			<employee>
+				<identification>
+              <firstName>ΙΩΑΝΝΗΣ2</firstName>
+              <lastName>ΙΩΑΝΝΟΥ2</lastName>
+              <tel></tel>
+              <email>mail@dipe.chan.sch.gr</email>
+              <tin>140938501</tin>
+              <policeId>ΑΙ464515</policeId>
+              <bankAccount iban="" />
+              <amka>03046701100</amka>
+              <amm>578886</amm>
+              <scale>
+                <rank>566</rank>
+              </scale>
+              <category value="ΠΕ" />
+            </identification>
+				<payment contractType="1">
+              <income type="0">
+                <gr code="1" kae="0211" amount="1685.00" />
+                <gr code="4" kae="0213" amount="120.00" />
+                <gr code="19" kae="0227" amount="150.00" />
+                <et code="4052000" kae="0293" amount="99.71" />
+                <et code="4012504" kae="0292" amount="18.30" />
+                <et code="4012501" kae="0292" amount="40.35" />
+                <de code="4052000" amount="49.85" />
+                <de code="4012504" amount="18.30" />
+                <de code="4012501" amount="40.35" />
+                <de code="4013601" amount="53.80" />
+                <de code="4003101" amount="80.23" />
+                <de code="3082400" amount="99.10" />
+                <de code="3082800" amount="39.10" />
+                <de code="4013605" amount="19.55" />
+                <de code="3011300" amount="164.53" />
+                <de code="3089100" amount="10.88" />
+                <de code="4035501" amount="280.68" loanNumber="-1" />
+                <de code="4999901" amount="3.00" />
+              </income>
+              <income type="1" startDate="2014-09-12" endDate="2015-01-31" month="9" year="2014">
+                <gr code="19" kae="0227" amount="95.00" />
+                <et code="4052000" kae="0293" amount="4.85" />
+                <et code="4012504" kae="0292" amount="2.85" />
+                <de code="4052000" amount="2.42" />
+                <de code="4012504" amount="2.85" />
+                <de code="4003101" amount="3.80" />
+                <de code="3082800" amount="1.90" />
+                <de code="4013605" amount="0.95" />
+                <de code="3011300" amount="16.37" />
+              </income>
+              <income type="1" startDate="2014-09-12" endDate="2015-01-31" month="10" year="2014">
+                <gr code="19" kae="0227" amount="150.00" />
+                <et code="4052000" kae="0293" amount="7.65" />
+                <et code="4012504" kae="0292" amount="4.50" />
+                <de code="4052000" amount="3.83" />
+                <de code="4012504" amount="4.50" />
+                <de code="4003101" amount="6.00" />
+                <de code="3082800" amount="3.00" />
+                <de code="4013605" amount="1.50" />
+                <de code="3011300" amount="25.84" />
+              </income>
+              <income type="1" startDate="2014-09-12" endDate="2015-01-31" month="11" year="2014">
+                <gr code="19" kae="0227" amount="150.00" />
+                <et code="4052000" kae="0293" amount="7.65" />
+                <et code="4012504" kae="0292" amount="4.50" />
+                <de code="4052000" amount="3.83" />
+                <de code="4012504" amount="4.50" />
+                <de code="4003101" amount="6.00" />
+                <de code="3082800" amount="3.00" />
+                <de code="4013605" amount="1.50" />
+                <de code="3011300" amount="25.84" />
+              </income>
+              <income type="1" startDate="2014-09-12" endDate="2015-01-31" month="12" year="2014">
+                <gr code="19" kae="0227" amount="150.00" />
+                <et code="4052000" kae="0293" amount="7.65" />
+                <et code="4012504" kae="0292" amount="4.50" />
+                <de code="4052000" amount="3.83" />
+                <de code="4012504" amount="4.50" />
+                <de code="4003101" amount="6.00" />
+                <de code="3082800" amount="3.00" />
+                <de code="4013605" amount="1.50" />
+                <de code="3011300" amount="25.84" />
+              </income>
+              <income type="1" startDate="2014-09-12" endDate="2015-01-31" month="1" year="2015">
+                <gr code="19" kae="0227" amount="150.00" />
+                <et code="4052000" kae="0293" amount="7.65" />
+                <et code="4012504" kae="0292" amount="4.50" />
+                <de code="4052000" amount="3.83" />
+                <de code="4012504" amount="4.50" />
+                <de code="4003101" amount="6.00" />
+                <de code="3082800" amount="3.00" />
+                <de code="4013605" amount="1.50" />
+                <de code="3011300" amount="25.84" />
+              </income>
+              <netAmount1 value="1035.85" />
+              <netAmount2 value="547.81" />
+            </payment>
+          </employee>
+		</employees>
+		<totals gross="2017876.93" deduction="661367.42" employerTax="167581.27" netAmount1="681504.21" netAmount2="675005.30" />
+        <totalsKAE>
+          <grKAE>
+            <KAE value="0211" amount="1913615.06" Commitment="00000794" />
+            <KAE value="0213" amount="54786.67" Commitment="00000793" />
+            <KAE value="0227" amount="46330.00" Commitment="00000791" />
+            <KAE value="0221" amount="1445.20" Commitment="00000792" />
+            <KAE value="0228" amount="1700.00" Commitment="00000790" />
+          </grKAE>
+          <deKAE>
+            <KAE value="0520" amount="50508.66" />
+            <KAE value="0125" amount="64497.44" />
+            <KAE value="0136" amount="93800.42" />
+            <KAE value="0031" amount="85632.98" />
+            <KAE value="0824" amount="135558.29" />
+            <KAE value="0828" amount="39864.97" />
+            <KAE value="0335" amount="838.59" />
+            <KAE value="0338" amount="377.18" />
+            <KAE value="0339" amount="502.90" />
+            <KAE value="0337" amount="471.47" />
+            <KAE value="0340" amount="270.32" />
+            <KAE value="0517" amount="125.73" />
+            <KAE value="0021" amount="290.45" />
+            <KAE value="0409" amount="51.06" />
+            <KAE value="0113" amount="113075.92" />
+            <KAE value="3243" amount="2655.29" />
+            <KAE value="3241" amount="24630.47" />
+            <KAE value="0891" amount="8941.35" />
+            <KAE value="9999" amount="3395.00" />
+            <KAE value="0135" amount="13410.03" />
+            <KAE value="0355" amount="19759.28" />
+            <KAE value="0083" amount="1930.24" />
+            <KAE value="0001" amount="283.08" />
+            <KAE value="0002" amount="496.30" />
+          </deKAE>
+          <etKAE>
+            <KAE value="0293" amount="101015.04" Commitment="00000787" />
+            <KAE value="0292" amount="66005.30" Commitment="00000788" />
+            <KAE value="0291" amount="560.93" Commitment="00000789" />
+          </etKAE>
+        </totalsKAE>
+	  </organization>
+      <organization id="192170">
+		<employees>
+			<employee>
+				<identification>
+              <firstName>ΙΩΑΝΝΗΣ3</firstName>
+              <lastName>ΙΩΑΝΝOY33</lastName>
+              <tel></tel>
+              <email>mail@dipe.chan.sch.gr</email>
+              <tin>140938341</tin>
+              <policeId>ΑΒ485060</policeId>
+              <bankAccount iban="" />
+              <amka>18057503544</amka>
+              <amm>593081</amm>
+              <newInsured></newInsured>
+              <scale>
+                <rank>560</rank>
+              </scale>
+              <category value="ΠΕ" />
+            </identification>
+				<payment contractType="1">
+              <income type="0">
+                <gr code="1" kae="0211" amount="1437.00" />
+                <gr code="4" kae="0213" amount="70.00" />
+                <et code="4052000" kae="0293" amount="76.86" />
+                <et code="4012501" kae="0292" amount="53.07" />
+                <de code="4052000" amount="38.43" />
+                <de code="4012501" amount="53.07" />
+                <de code="4013601" amount="70.76" />
+                <de code="4003101" amount="63.81" />
+                <de code="3082400" amount="127.38" />
+                <de code="3082800" amount="30.14" />
+                <de code="4013605" amount="15.07" />
+                <de code="3011300" amount="67.80" />
+                <de code="3089100" amount="7.76" />
+                <de code="4999901" amount="3.00" />
+              </income>
+              <netAmount1 value="514.89" />
+              <netAmount2 value="514.89" />
+            </payment>
+			</employee>
+			<employee>
+				<identification>
+              <firstName>ΙΩΑΝΝΗΣ4</firstName>
+              <lastName>ΙΩΑΝΝΟΥ4</lastName>
+              <tel></tel>
+              <email>mail@dipe.chan.sch.gr</email>
+              <tin>140938503</tin>
+              <policeId>ΑΗ473540</policeId>
+              <bankAccount iban="" />
+              <amka>12026901988</amka>
+              <amm>591024</amm>
+              <scale>
+                <rank>557</rank>
+              </scale>
+              <category value="ΠΕ" />
+            </identification>
+				<payment contractType="1">
+              <income type="0">
+                <gr code="1" kae="0211" amount="1944.00" />
+                <gr code="4" kae="0213" amount="70.00" />
+                <et code="4052000" kae="0293" amount="102.71" />
+                <et code="4012504" kae="0292" amount="17.67" />
+                <et code="4012501" kae="0292" amount="42.75" />
+                <de code="4052000" amount="51.36" />
+                <de code="4012504" amount="17.67" />
+                <de code="4012501" amount="42.75" />
+                <de code="4013601" amount="57.00" />
+                <de code="4003101" amount="84.09" />
+                <de code="3082400" amount="104.44" />
+                <de code="3082800" amount="40.28" />
+                <de code="4013605" amount="20.14" />
+                <de code="3011300" amount="173.54" />
+                <de code="3089100" amount="11.17" />
+                <de code="4999901" amount="3.00" />
+              </income>
+              <netAmount1 value="704.28" />
+              <netAmount2 value="704.28" />
+            </payment>
+			</employee>
+		</employees>
+		<totals gross="2017876.93" deduction="661367.42" employerTax="167581.27" netAmount1="681504.21" netAmount2="675005.30" />
+        <totalsKAE>
+          <grKAE>
+            <KAE value="0211" amount="1913615.06" Commitment="00000794" />
+            <KAE value="0213" amount="54786.67" Commitment="00000793" />
+            <KAE value="0227" amount="46330.00" Commitment="00000791" />
+            <KAE value="0221" amount="1445.20" Commitment="00000792" />
+            <KAE value="0228" amount="1700.00" Commitment="00000790" />
+          </grKAE>
+          <deKAE>
+            <KAE value="0520" amount="50508.66" />
+            <KAE value="0125" amount="64497.44" />
+            <KAE value="0136" amount="93800.42" />
+            <KAE value="0031" amount="85632.98" />
+            <KAE value="0824" amount="135558.29" />
+            <KAE value="0828" amount="39864.97" />
+            <KAE value="0335" amount="838.59" />
+            <KAE value="0338" amount="377.18" />
+            <KAE value="0339" amount="502.90" />
+            <KAE value="0337" amount="471.47" />
+            <KAE value="0340" amount="270.32" />
+            <KAE value="0517" amount="125.73" />
+            <KAE value="0021" amount="290.45" />
+            <KAE value="0409" amount="51.06" />
+            <KAE value="0113" amount="113075.92" />
+            <KAE value="3243" amount="2655.29" />
+            <KAE value="3241" amount="24630.47" />
+            <KAE value="0891" amount="8941.35" />
+            <KAE value="9999" amount="3395.00" />
+            <KAE value="0135" amount="13410.03" />
+            <KAE value="0355" amount="19759.28" />
+            <KAE value="0083" amount="1930.24" />
+            <KAE value="0001" amount="283.08" />
+            <KAE value="0002" amount="496.30" />
+          </deKAE>
+          <etKAE>
+            <KAE value="0293" amount="101015.04" Commitment="00000787" />
+            <KAE value="0292" amount="66005.30" Commitment="00000788" />
+            <KAE value="0291" amount="560.93" Commitment="00000789" />
+          </etKAE>
+        </totalsKAE>
+      </organization>
+	</organizations>
+  </body>
+</psp>
