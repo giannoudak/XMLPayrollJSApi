@@ -240,10 +240,10 @@ namespace XMLPayrollJSApi.Helpers
         /// <returns>Επιστρέφει μία λίστα με αντικείμενα SalaryAmounts. Το καθε SalaryAmount
         /// έχει ένα κωδικό, ένα description και το ποσό.
         /// </returns>
-        public static List<SalaryAmounts> GetSalaryAmounts(IEnumerable<XElement> incomes, string type, string code)
+        public static IList<SalaryAmounts> GetSalaryAmounts(IEnumerable<XElement> incomes, string type, string code)
         {
-            List<SalaryAmounts> amounts = new List<SalaryAmounts>();
-            List<string> gfh = new List<string>();
+            IList<SalaryAmounts> amounts = new List<SalaryAmounts>();
+            IList<string> gfh = new List<string>();
 
 
             // διπλο grouping των Incomes ως προς το code 
