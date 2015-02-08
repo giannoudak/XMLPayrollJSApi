@@ -10,11 +10,11 @@ namespace XMLPayrollJSApi.Models
     {
         public SalaryEmployeeInfo SalaryEmployee { get; set; }
 
-        public List<SalaryEmployeeDetails> SalaryDetalis { get; set; }
+        public IList<SalaryEmployeeDetails> SalaryDetalis { get; set; }
 
         public SalaryTotals SalaryTotalAmounts { get; set; }
        
-        public List<EapXMLError> Errors { get; set; }
+        public IList<EapXMLError> Errors { get; set; }
     }
 
     [Serializable]
@@ -73,9 +73,9 @@ namespace XMLPayrollJSApi.Models
             }
         }
 
-        public List<SalaryAmounts> Amoibes { get; set; }
-        public List<SalaryAmounts> ErgEisfores { get; set; }
-        public List<SalaryAmounts> Krathseis { get; set; }
+        public IList<SalaryAmounts> Amoibes { get; set; }
+        public IList<SalaryAmounts> ErgEisfores { get; set; }
+        public IList<SalaryAmounts> Krathseis { get; set; }
 
        
 

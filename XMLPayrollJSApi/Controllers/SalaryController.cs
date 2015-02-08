@@ -54,7 +54,7 @@ namespace XMLPayrollJSApi
                 try
                 {
                     
-                    xml = EapXML.LoadXML(model.Month, model.year);
+                    xml = EapXML.LoadXML(model.Month, model.Year);
                 }
                 catch (EAPXMLException e)
                 {
@@ -65,7 +65,7 @@ namespace XMLPayrollJSApi
                 SalaryDetailsViewModel employee = EapXMLTool.GetSalaryDetailsViewModel(xml, model.Afm);
                 if (employee == null)
                 {
-                    return this.NotFound(string.Format("Ο υπαλληλος με ΑΦΜ:{0} δεν βρέθηκε στο XML της περιόδου {1}/{2}", model.Afm, model.Month, model.year));
+                    return this.NotFound(string.Format("Ο υπαλληλος με ΑΦΜ:{0} δεν βρέθηκε στο XML της περιόδου {1}/{2}", model.Afm, model.Month, model.Year));
                 }
                 return Ok<SalaryDetailsViewModel>(employee);
             }else

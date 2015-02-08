@@ -139,7 +139,7 @@ namespace XMLPayrollJSApi.Helpers
         /// <returns>Μια λίστα από <int, string> ζεύγη</returns>
         /// <remarks>Με κλήση της συγκεκριμένης ρουτίνας υποκαθιστούμε ουσιαστικά την ανάκτηση των δεδομένων
         /// του αντίστοιχου lut από τη βάση.</remarks>
-        public static List<KeyValuePair<int, string>> GetEnumKeyValuePairs(Type enumType)
+        public static IList<KeyValuePair<int, string>> GetEnumKeyValuePairs(Type enumType)
         {
             var list = new List<KeyValuePair<int, string>>();
             foreach (var value in Enum.GetValues(enumType))
