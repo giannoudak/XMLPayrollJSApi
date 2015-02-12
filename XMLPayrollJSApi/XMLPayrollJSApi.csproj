@@ -145,6 +145,14 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
+    <None Include="Properties\PublishProfiles\ftp.giannoudak.pubxml" />
+    <None Include="Properties\PublishProfiles\ftp.psd.pubxml" />
+    <None Include="Properties\PublishProfiles\g.pubxml" />
+    <None Include="Properties\PublishProfiles\local test ftp.pubxml" />
+    <None Include="Properties\PublishProfiles\salapp-chania - FTP %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\salapp-chania - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\salapp-chania - Web Deploy %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\salapp-chania - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
@@ -184,7 +192,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\xmls\2014\" />
-    <Folder Include="Properties\PublishProfiles\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
