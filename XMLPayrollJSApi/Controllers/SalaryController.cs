@@ -10,9 +10,12 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Web.Http;
 using System.Xml.Linq;
+using System.Web.Http.Cors;
 
 namespace XMLPayrollJSApi
 {
+
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     [RoutePrefix("api/salary")]
     public class SalaryController : ApiController
     {

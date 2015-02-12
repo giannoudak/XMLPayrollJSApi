@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Security;
 using System.Web;
 using System.Xml.Linq;
@@ -24,11 +25,28 @@ namespace XMLPayrollJSApi.Helpers
             if (month != null && year != null)
             {
 
-                string xmlData = HttpContext.Current.Server.MapPath("~/App_Data/xmls/"+year+"/"+month+"/data.xml");//Path of the xml script
+
+
+                
+                string xmlData = "http://dipe.chan.sch.gr/oikonomika/xmls/"+year+"/"+month+"/"+"data.xml";
 
                 try
                 {
-                    xmlDoc = XDocument.Load(xmlData);
+                    string xmlDataResult ="";
+
+
+                    // Add a user agent header in case the  
+                    // requested URI contains a query.
+                    using (WebClient clnt = new WebClient())
+                    {
+                        clnt.Encoding = System.Text.Encoding.UTF8;
+                        clnt.Headers.Add("user-agent", "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.2; .NET CLR 1.0.3705;)");
+                        xmlDataResult = clnt.DownloadString(xmlData);
+                        xmlDoc = XDocument.Parse(xmlDataResult);
+                    }
+
+
+                    //return null;
                     return xmlDoc;
                 }
                 catch (SecurityException e)

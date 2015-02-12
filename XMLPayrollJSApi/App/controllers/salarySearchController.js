@@ -22,13 +22,18 @@ salaryapp.controller('salarySearchController', function ($scope, $http, promiseT
         }
 
         if ($scope.payrollform.$valid) {
-            var $promise = $http({
 
-                method: 'Post',
-                url: '/api/salary',
-                data: $scope.SalaryDemandViewModel
+            // define the CORS request 
+            var req = {
+                method: 'POST',
+                url: "http://salapp-chania.gear.host/api/salary",
+                headers: {
+                    'Content-Type': "application/json"
+                },
+                data: $scope.SalaryDemandViewModel,
+            }
 
-            }).success(function (data, status, headers, config) {
+            var $promise = $http(req).success(function (data, status, headers, config) {
 
 
                 $scope.SalaryDetailsViewModel = data;

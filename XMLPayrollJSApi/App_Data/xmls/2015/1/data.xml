@@ -219,6 +219,35 @@
               <netAmount2 value="547.81" />
             </payment>
           </employee>
+      <employee>
+            <identification>
+              <firstName>ΚΑΛΛΙΟΠΗ</firstName>
+              <lastName>ΓΙΑΝΝΑΚΟΥ</lastName>
+              <tel></tel>
+              <tin>100629087</tin>
+              <policeId>ΑΙ973658</policeId>
+              <bankAccount iban="" />
+              <amka>04017000789</amka>
+              <amm>907415</amm>
+              <scale>
+                <rank>564</rank>
+              </scale>
+              <category value="ΔΕ" />
+            </identification>
+            <payment contractType="3">
+              <income type="0">
+                <gr code="1" kae="0211" amount="1002.00" />
+                <gr code="4" kae="0213" amount="50.00" />
+                <et code="4002100" kae="0291" amount="258.37" />
+                <de code="4013601" amount="40.08" />
+                <de code="4002100" amount="163.06" />
+                <de code="4013605" amount="10.52" />
+                <de code="3011300" amount="9.29" />
+              </income>
+              <netAmount1 value="414.53" />
+              <netAmount2 value="414.52" />
+            </payment>
+          </employee>
 		</employees>
 		<totals gross="2017876.93" deduction="661367.42" employerTax="167581.27" netAmount1="681504.21" netAmount2="675005.30" />
         <totalsKAE>
