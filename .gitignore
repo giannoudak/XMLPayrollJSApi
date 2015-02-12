@@ -8,11 +8,7 @@
 
 *.pubxml
 
-# Sample Data
 
-
-# Ignore Sample Data
-**/App_Data/
 
 # Build results
 
@@ -139,6 +135,11 @@ UpgradeLog*.htm
 # SQL Server files
 App_Data/*.mdf
 App_Data/*.ldf
+
+
+# Ignore Sample Data
+*/App_Data/*/*/*.xml
+
 
 
 #LightSwitch generated files
