@@ -26,9 +26,7 @@ namespace XMLPayrollJSApi.Helpers
             {
 
 
-
-                
-                string xmlData = "http://dipe.chan.sch.gr/oikonomika/xmls/"+year+"/"+month+"/"+"data.xml";
+                string xmlData = Constants.SERVER_NAME + Constants.THE_FOLD+year+"/"+month+"/"+"data.xml";
 
                 try
                 {

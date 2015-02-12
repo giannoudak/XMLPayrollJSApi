@@ -10,6 +10,8 @@
 
 
 
+
+
 # Build results
 
 [Dd]ebug/
@@ -98,6 +100,9 @@ publish/
 
 # Publish Web Output
 *.Publish.xml
+
+
+Helpers/Commons.cs
 
 # NuGet Packages Directory
 ## TODO: If you have NuGet Package Restore enabled, uncomment the next line

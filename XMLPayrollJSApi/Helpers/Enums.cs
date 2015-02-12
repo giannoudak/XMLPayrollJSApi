@@ -1,6 +1,8 @@
 ﻿using System.ComponentModel;
 namespace XMLPayrollJSApi.Helpers
 {
+
+
     public enum TyposAmoibhsKAE : int
     {
         [Description("Βασικός Μισθός")]

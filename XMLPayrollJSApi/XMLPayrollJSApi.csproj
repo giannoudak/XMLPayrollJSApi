@@ -170,6 +170,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\Attributes.cs" />
+    <Compile Include="Helpers\Commons.cs" />
     <Compile Include="Helpers\DisplayNameHelper.cs" />
     <Compile Include="Helpers\EapXML.cs" />
     <Compile Include="Helpers\EapXMLTool.cs" />
