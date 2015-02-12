@@ -8,6 +8,9 @@
 
 *.pubxml
 
+# Sample Data
+App_Data/
+
 # Build results
 
 [Dd]ebug/
