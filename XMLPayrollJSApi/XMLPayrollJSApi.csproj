@@ -110,7 +110,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include=".gitignore" />
     <Content Include="App\app.js" />
     <Content Include="App\controllers\mainController.js" />
     <Content Include="App\controllers\salarySearchController.js" />
