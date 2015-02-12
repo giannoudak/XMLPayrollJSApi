@@ -9,7 +9,7 @@
 *.pubxml
 
 # Sample Data
-App_Data/
+XMLPayrollJSApi/App_Data/*
 
 # Build results
 
