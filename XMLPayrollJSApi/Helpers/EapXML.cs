@@ -24,9 +24,11 @@ namespace XMLPayrollJSApi.Helpers
             XDocument xmlDoc;
             if (month != null && year != null)
             {
-
-
-                string xmlData = Constants.SERVER_NAME + Constants.THE_FOLD+year+"/"+month+"/"+"data.xml";
+                Uri server = new Uri(Constants.SERVER_NAME);
+                Uri xmlFold = new Uri(Constants.SERVER_NAME + Constants.THE_FOLD);
+                Uri xmlFoldYear = new Uri(xmlFold, year+"/"+month+"/"+Constants.THE_NAME);
+                
+                
 
                 try
                 {
@@ -39,7 +41,7 @@ namespace XMLPayrollJSApi.Helpers
                     {
                         clnt.Encoding = System.Text.Encoding.UTF8;
                         clnt.Headers.Add("user-agent", "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.2; .NET CLR 1.0.3705;)");
-                        xmlDataResult = clnt.DownloadString(xmlData);
+                        xmlDataResult = clnt.DownloadString(xmlFoldYear);
                         xmlDoc = XDocument.Parse(xmlDataResult);
                     }
 
