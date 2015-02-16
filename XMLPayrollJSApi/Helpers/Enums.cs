@@ -7,6 +7,8 @@ namespace XMLPayrollJSApi.Helpers
     {
         [Description("Βασικός Μισθός")]
         BasikosMisthos = 211,
+        [Description("Βασικός Μισθός")]
+        BasikosMisthosAmoibesAnaplhrwtwn = 344,
         [Description("Οικογενειακό Επίδομα")]
         OikogeniakoEpidoma =213,
         [Description("Επίδομα Θέσης")]

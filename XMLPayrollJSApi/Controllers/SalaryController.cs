@@ -20,28 +20,7 @@ namespace XMLPayrollJSApi
     public class SalaryController : ApiController
     {
 
-        [Route("{afm:length(9)}/{month}/{year}")]
-        public IHttpActionResult GetEmployeeSalary(string afm, short month, int year)
-        {
-            XDocument xml;
-
-            try
-            {
-                xml = EapXML.LoadXML(3, 2014);
-            }
-            catch (EAPXMLException e)
-            {
-                return this.NotFound(e.Message);
-
-            }
-
-            SalaryDetailsViewModel employee = EapXMLTool.GetSalaryDetailsViewModel(xml, afm);
-            if (employee == null)
-            {
-                return this.NotFound(string.Format("Ο υπαλληλος με ΑΦΜ:{0} δεν βρέθηκε στο XML της περιόδου {1}/{2}", afm, month, year));
-            }
-            return Ok<SalaryDetailsViewModel>(employee);
-        }
+        
 
 
         [ValidateModelAttribute]
@@ -57,7 +36,7 @@ namespace XMLPayrollJSApi
                 try
                 {
                     
-                    xml = EapXML.LoadXML(model.Month, model.year);
+                    xml = EapXML.LoadXML(model.Month, model.year,model.IsAnaplhrwths);
                 }
                 catch (EAPXMLException e)
                 {

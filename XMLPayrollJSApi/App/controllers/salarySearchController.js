@@ -26,7 +26,7 @@ salaryapp.controller('salarySearchController', function ($scope, $http, promiseT
             // define the CORS request 
             var req = {
                 method: 'POST',
-                url: "http://salapp-chania.gear.host/api/salary",
+                url: "/api/salary",
                 headers: {
                     'Content-Type': "application/json"
                 },
@@ -43,6 +43,8 @@ salaryapp.controller('salarySearchController', function ($scope, $http, promiseT
                 transactionService.preSaveMonth($scope.SalaryDemandViewModel.month);
                 transactionService.preSaveYear($scope.SalaryDemandViewModel.year);
                 transactionService.preSaveAfm($scope.SalaryDemandViewModel.afm);
+                transactionService.preSaveIsAnaplhrwths($scope.SalaryDemandViewModel.IsAnaplhrwths);
+
 
                 $location.path('/show');
 

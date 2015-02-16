@@ -9,7 +9,7 @@
     <header class="row row-centered hidden-print">
         <h5 class="subtitle">
             {{title}}: ΑΦΜ:{{afm}} - {{month}}/{{year}}
-            <button class="btn btn-info btn-xs" type="button" disabled ng-disabled="true" onclick="PrintContent('apodoxes_result')"><span aria-hidden="true" class="glyphicon glyphicon-print"></span> Εκτύπωση</button>
+            <button class="btn btn-info btn-xs" type="button"  onclick="printWithCss('apodoxes_result')"><span aria-hidden="true" class="glyphicon glyphicon-print"></span> Εκτύπωση</button>
         </h5>
     </header>
 
@@ -57,7 +57,7 @@
 
             <div id=" {{salaryItem.typeDescriptionText}}" class="row ">
                 <p class="row row-centered text-uppercase">
-                    <strong>Ποσα {{salaryItem.typeDisplayText}}  <span ng-show="salaryItem.type==1">ΑΠΟ: {{ salaryItem.startDate }} - ΜΕΧΡΙ: {{ salaryItem.endDate }}</span> </strong>
+                    <strong>Ποσα {{salaryItem.typeDisplayText}}  <span ng-show="salaryItem.type==1"> {{salaryItem.startDate }}  {{ salaryItem.endDate }}</span> </strong>
                 </p>
 
                 <div class="row">

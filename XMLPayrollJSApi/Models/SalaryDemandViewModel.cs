@@ -17,6 +17,8 @@ namespace XMLPayrollJSApi.Models
         public short Month { get; set; }
        // [MaxLength(4),MinLength(4)]
         public int year { get; set; }
+
+        public bool IsAnaplhrwths { get; set; }
     }
 
 

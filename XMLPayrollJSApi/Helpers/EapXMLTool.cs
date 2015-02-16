@@ -183,8 +183,8 @@ namespace XMLPayrollJSApi.Helpers
                     case 1:
                         employeeItm.Type = 1;
                         
-                        employeeItm.EndDate = Convert.ToDateTime( incomestaktikhs.First().Attribute("endDate").Value).ToString("dd/M/yyyy");
-                        employeeItm.StartDate = Convert.ToDateTime(incomestaktikhs.First().Attribute("startDate").Value).ToString("dd/M/yyyy");
+                        employeeItm.EndDate = "- ΕΩΣ: "+Convert.ToDateTime( incomestaktikhs.First().Attribute("endDate").Value).ToString("dd/M/yyyy");
+                        employeeItm.StartDate = "ΑΠΟ: " +Convert.ToDateTime(incomestaktikhs.First().Attribute("startDate").Value).ToString("dd/M/yyyy");
                         employeeItm.PeriodCount = null;
 
                         break;

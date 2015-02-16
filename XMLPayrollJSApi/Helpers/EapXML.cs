@@ -19,14 +19,23 @@ namespace XMLPayrollJSApi.Helpers
         /// <param name="month"></param>
         /// <param name="year"></param>
         /// <returns></returns>
-        public static XDocument LoadXML(short month, int year)
+        public static XDocument LoadXML(short month, int year, bool isAnaplhrwths)
         {
             XDocument xmlDoc;
             if (month != null && year != null)
             {
                 Uri server = new Uri(Constants.SERVER_NAME);
                 Uri xmlFold = new Uri(Constants.SERVER_NAME + Constants.THE_FOLD);
-                Uri xmlFoldYear = new Uri(xmlFold, year+"/"+month+"/"+Constants.THE_NAME);
+                Uri xmlFoldYear = null;
+                if (isAnaplhrwths)
+                {
+                    xmlFoldYear = new Uri(xmlFold, year + "/" + month + "/" + Constants.THE_SUBSTITUTES + Constants.THE_NAME);
+                }
+                else
+                {
+                    xmlFoldYear = new Uri(xmlFold, year + "/" + month + "/" + Constants.THE_NAME);
+                }
+                
                 
                 
 

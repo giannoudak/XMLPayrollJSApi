@@ -34,6 +34,7 @@ salaryapp.factory('transactionService', [function () {
     var month = {};
     var year = {};
     var afm = {};
+    var IsAnaplhrwths = {};
 
     // set methods
     service.preSaveTrsn = function (employee) {
@@ -48,6 +49,9 @@ salaryapp.factory('transactionService', [function () {
     };
     service.preSaveAfm = function (tin) {
         afm = tin;
+    }; 
+    service.preSaveIsAnaplhrwths = function (isAnaplhrwths) {
+        IsAnaplhrwths = isAnaplhrwths;
     };
 
 
@@ -63,6 +67,9 @@ salaryapp.factory('transactionService', [function () {
     };
     service.getPreSaveAfm = function () {
         return afm;
+    }
+    service.getPreSaveIsAnaplhrwths = function () {
+        return IsAnaplhrwths;
     }
     return service;
 }]);

@@ -1,22 +1,23 @@
 ﻿'use strict';
 
-function PrintContent(id) {
-    var DocumentContainer = document.getElementById(id);
-    var WindowObject = window.open('', 'PrintWindow', 'width=1150,height=auto,top=50,left=50,toolbars=no,scrollbars=yes,status=no,resizable=yes');
-    WindowObject.document.write('<HTML>\n<HEAD>\n');
-    WindowObject.document.write('<TITLE></TITLE>\n');
-    //WindowObject.document.write("<link href='Content/bootstrap.min.css' rel='stylesheet' media='all' />\n");
-    WindowObject.document.write("<link href='Content/print.css' rel='stylesheet' media='all' />\n");
+function printWithCss(id) {
+    //Works with Chome, Firefox, IE, Safari
+    //Get the HTML of div
+    var title = document.title;
+    var divElements = document.getElementById(id).innerHTML;
+    var printWindow = window.open('', 'PrintWindow', 'width=1000,height=auto,top=50,left=50,toolbars=no,scrollbars=yes,status=no,resizable=yes');
+    //open the window
+    printWindow.document.open();
+    //write the html to the new window, link to css file
+    printWindow.document.write('<html><head><title>' + title + '</title><link rel="stylesheet" type="text/css" href="http://www.dipechan.gr/oikonomika/Content/print.css"></head><body class="container body-content row-centered">');
 
-   
-
-    WindowObject.document.write('</HEAD>\n');
-    WindowObject.document.write('<BODY>\n');
-    WindowObject.document.writeln(DocumentContainer.innerHTML);
-    WindowObject.document.write('</BODY>\n');
-    WindowObject.document.write('</HTML>\n');
-    WindowObject.document.close();
-    WindowObject.focus();
-    //WindowObject.print();
-    //WindowObject.close();
+    printWindow.document.write(divElements);
+    printWindow.document.write('</body></html>');
+    printWindow.document.close();
+    printWindow.focus();
+    //The Timeout is ONLY to make Safari work, but it still works with FF, IE & Chrome.
+    //setTimeout(function () {
+        printWindow.print();
+        printWindow.close();
+    //}, 100);
 }
